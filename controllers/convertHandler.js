@@ -2,6 +2,11 @@ function ConvertHandler() {
   
   this.getNum = function(input) {
     let result;
+    if (typeof input == number && input % 1 != 0) {
+      let result = input
+    } else {
+      let result = 'invalid number'
+    }
     
     return result;
   };
